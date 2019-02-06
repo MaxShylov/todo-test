@@ -1,0 +1,38 @@
+.TodoListItem {
+  margin-top: 10px;
+  background: #fff;
+
+  .anticon {
+    min-width: 20px;
+  }
+
+  .text {
+    padding-left: 10px;
+    flex-grow: 1;
+    cursor: grab;
+    border: 1px solid #008fff;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  .ant-btn {
+    height: auto;
+  }
+
+  .ant-input-group {
+    display: flex;
+    align-items: stretch;
+
+    .ant-input {
+      padding-left: 10px;
+
+      &-disabled {
+        cursor: default;
+      }
+    }
+  }
+
+}

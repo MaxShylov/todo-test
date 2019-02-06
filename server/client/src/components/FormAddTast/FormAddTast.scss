@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.FormAddTast {
+  display: flex;
+  padding-top: 50px;
+
+  .ant-input-group {
+    display: flex;
+  }
+}

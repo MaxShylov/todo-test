@@ -1,7 +1,1 @@
-/node_modules
 .idea
-.env
-package-lock.json
-yarn.lock
-yarn-error.log*
-tasks.txt

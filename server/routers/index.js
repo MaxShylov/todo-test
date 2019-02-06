@@ -57,7 +57,7 @@ module.exports = (app) => {
       if (!isEmpty(user)) {
         res.send({ data: user.tasks, updateAt: user.updateAt })
       } else {
-        res.status(400).send({ message: 'Token isn\'t correct' })
+        res.status(401).send({ message: 'Token isn\'t correct' })
       }
     } catch (e) {
       console.log('Check token error:', e);
@@ -82,7 +82,7 @@ module.exports = (app) => {
 
         res.sendStatus(200);
       } else {
-        res.status(400).send({ message: 'Token isn\'t correct' })
+        res.status(401).send({ message: 'Token isn\'t correct' })
       }
     } catch (e) {
       console.log('Check token error:', e);

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "$ env $(cat .env) node index.js",
+    "start": "env $(cat .env) node index.js",
     "start-dev": "env $(cat .env) nodemon index.js"
   },
   "keywords": [],

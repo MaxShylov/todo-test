@@ -9,16 +9,16 @@ import Container from '../Container/Container';
 import './FormAddTast.scss'
 import { addTask } from '../../redux/actions/tasks/tasks';
 
-const {} = PropTypes;
+const { func } = PropTypes;
 const InputGroup = Input.Group;
 
 
-class FormAddTast extends Component {
-  static propTypes = {};
-
-  state = {
-    value: null
+export class FormAddTast extends Component {
+  static propTypes = {
+    addTask: func
   };
+
+  state = { value: null };
 
   onChange = (e) => this.setState({ value: e.target.value });
 
@@ -55,7 +55,6 @@ class FormAddTast extends Component {
     );
   }
 }
-
 
 
 const matchDispatchToProps = dispatch => bindActionCreators({

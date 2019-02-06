@@ -29,7 +29,7 @@ export const getTasks = () => (dispatch) => {
           getUpdateAt = res.updateAt,
           localTasks = localStorage.tasks ? JSON.parse(localStorage.tasks) : [],
           localeUpdateAt = localStorage.updateAt,
-          tasks = +getUpdateAt > +localeUpdateAt ? getTasks : localTasks;
+          tasks = getUpdateAt > localeUpdateAt ? getTasks : localTasks;
 
         dispatch({ type: types.GET_TASKS_SUCCESS, payload: tasks })
       },
@@ -55,7 +55,7 @@ export const saveTasks = () => (dispatch, getState) => {
   const tasks = getState().tasks.tasks;
 
   localStorage.setItem('tasks', JSON.stringify(tasks));
-  localStorage.setItem('updateAt', Date.now());
+  localStorage.setItem('updateAt', new Date().toISOString());
 
   navigator.onLine
     ? ajax({

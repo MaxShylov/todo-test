@@ -7,7 +7,7 @@ const UsersSchema = new Schema({
   username: String,
   password: String,
   createAt: { type: Date, default: new Date().toISOString() },
-  updateAt: Number,
+  updateAt: String,
   tasks: [{
     id: Number,
     content: String,

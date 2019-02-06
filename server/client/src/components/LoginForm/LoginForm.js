@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import PropTypes from 'prop-types';
 import Form from 'antd/lib/form';
 import Icon from 'antd/lib/icon';
@@ -9,32 +9,39 @@ import './LoginForm.scss'
 import { ajax } from '../../api/ajax';
 import { URL_LOGIN } from '../../api/routers';
 
-const {} = PropTypes;
+const { shape, func } = PropTypes;
 
 
-LoginForm.propTypes = {};
+LoginForm.propTypes = {
+  form: shape({
+    validateFields: func.isRequired,
+    getFieldDecorator: func.isRequired
+  }).isRequired
+};
 
 
-function LoginForm(props) {
+export function LoginForm(props) {
+
+  const { form: { validateFields, getFieldDecorator } } = props;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    props.form.validateFields((err, values) => {
+    validateFields((err, values) => {
       if (!err) {
         ajax({
           url: URL_LOGIN,
           data: values,
-          cb: (res) => {
-            localStorage.setItem('token', res.token);
-            window.location.reload();
-          }
+          cb: (res) => loginSuccess(res.token)
         })
       }
     });
   };
 
-  const { getFieldDecorator } = props.form;
+  const loginSuccess = (token) => {
+    localStorage.setItem('token', token);
+    window.location.reload();
+  };
 
   return (
     <Form onSubmit={handleSubmit} className="LoginForm">

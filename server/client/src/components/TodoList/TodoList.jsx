@@ -9,20 +9,21 @@ import './TodoList.scss'
 import SortableList from '../SortableList/SortableList';
 import { getTasks, saveTasks, sortTasks } from '../../redux/actions/tasks/tasks';
 import Container from '../Container/Container';
-import { setStatusConnection } from '../../redux/actions/connetcion/connetcion';
+import { setStatusConnection } from '../../redux/actions/connection/connection';
 
-const { array, func } = PropTypes;
+const { arrayOf, object, func } = PropTypes;
 
 let intSave = null;
 
-class TodoList extends Component {
+
+export class TodoList extends Component {
   static propTypes = {
     // redux
-    tasks: array.isRequired,
-    getTasks: func,
+    tasks: arrayOf(object).isRequired,
+    getTasks: func.isRequired,
     sortTasks: func,
     saveTasks: func,
-    setStatusConnection: func
+    setStatusConnection: func.isRequired
   };
 
   state = {

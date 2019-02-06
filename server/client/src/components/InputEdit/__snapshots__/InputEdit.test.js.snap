@@ -1,0 +1,1348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputEdit initial renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="text"
+        >
+          qwe
+        </div>,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Open edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "qwe",
+          "className": "text",
+        },
+        "ref": null,
+        "rendered": "qwe",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Open edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "edit",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="text"
+          >
+            qwe
+          </div>,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Open edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "qwe",
+            "className": "text",
+          },
+          "ref": null,
+          "rendered": "qwe",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Open edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "edit",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`InputEdit method closeEdit renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="text"
+        >
+          qwe
+        </div>,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Open edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "qwe",
+          "className": "text",
+        },
+        "ref": null,
+        "rendered": "qwe",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Open edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "edit",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="text"
+          >
+            qwe
+          </div>,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Open edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "qwe",
+            "className": "text",
+          },
+          "ref": null,
+          "rendered": "qwe",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Open edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "edit",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`InputEdit method onChange renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <TextArea
+          autosize={true}
+          disabled={false}
+          onChange={[Function]}
+          onPressEnter={[Function]}
+          value="123"
+        />,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Close edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="close"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autosize": true,
+          "disabled": false,
+          "onChange": [Function],
+          "onPressEnter": [Function],
+          "value": "123",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="close"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Close edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "close",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <TextArea
+            autosize={true}
+            disabled={false}
+            onChange={[Function]}
+            onPressEnter={[Function]}
+            value="123"
+          />,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Close edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="close"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autosize": true,
+            "disabled": false,
+            "onChange": [Function],
+            "onPressEnter": [Function],
+            "value": "123",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="close"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Close edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "close",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`InputEdit method openEdit renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <TextArea
+          autosize={true}
+          disabled={false}
+          onChange={[Function]}
+          onPressEnter={[Function]}
+          value="qwe"
+        />,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Close edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="close"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autosize": true,
+          "disabled": false,
+          "onChange": [Function],
+          "onPressEnter": [Function],
+          "value": "qwe",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="close"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Close edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "close",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <TextArea
+            autosize={true}
+            disabled={false}
+            onChange={[Function]}
+            onPressEnter={[Function]}
+            value="qwe"
+          />,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Close edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="close"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autosize": true,
+            "disabled": false,
+            "onChange": [Function],
+            "onPressEnter": [Function],
+            "value": "qwe",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="close"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Close edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "close",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`InputEdit method updateTask with state.value renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+    updateTask={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "content": "qwe",
+              "id": 1,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="text"
+        >
+          qwe
+        </div>,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Open edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "qwe",
+          "className": "text",
+        },
+        "ref": null,
+        "rendered": "qwe",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Open edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "edit",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="text"
+          >
+            qwe
+          </div>,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Open edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "qwe",
+            "className": "text",
+          },
+          "ref": null,
+          "rendered": "qwe",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Open edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "edit",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`InputEdit method updateTask without state.value renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputEdit
+    content="qwe"
+    id={1}
+    updateTask={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="text"
+        >
+          qwe
+        </div>,
+        <Tooltip
+          arrowPointAtCenter={false}
+          autoAdjustOverflow={true}
+          mouseEnterDelay={0.1}
+          mouseLeaveDelay={0.1}
+          placement="top"
+          title="Open edit"
+          transitionName="zoom-big-fast"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />
+        </Tooltip>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "qwe",
+          "className": "text",
+        },
+        "ref": null,
+        "rendered": "qwe",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "arrowPointAtCenter": false,
+          "autoAdjustOverflow": true,
+          "children": <Button
+            block={false}
+            ghost={false}
+            icon="edit"
+            loading={false}
+            onClick={[Function]}
+            type="primary"
+          />,
+          "mouseEnterDelay": 0.1,
+          "mouseLeaveDelay": 0.1,
+          "placement": "top",
+          "title": "Open edit",
+          "transitionName": "zoom-big-fast",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "ghost": false,
+            "icon": "edit",
+            "loading": false,
+            "onClick": [Function],
+            "type": "primary",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="text"
+          >
+            qwe
+          </div>,
+          <Tooltip
+            arrowPointAtCenter={false}
+            autoAdjustOverflow={true}
+            mouseEnterDelay={0.1}
+            mouseLeaveDelay={0.1}
+            placement="top"
+            title="Open edit"
+            transitionName="zoom-big-fast"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />
+          </Tooltip>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "qwe",
+            "className": "text",
+          },
+          "ref": null,
+          "rendered": "qwe",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "arrowPointAtCenter": false,
+            "autoAdjustOverflow": true,
+            "children": <Button
+              block={false}
+              ghost={false}
+              icon="edit"
+              loading={false}
+              onClick={[Function]}
+              type="primary"
+            />,
+            "mouseEnterDelay": 0.1,
+            "mouseLeaveDelay": 0.1,
+            "placement": "top",
+            "title": "Open edit",
+            "transitionName": "zoom-big-fast",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "ghost": false,
+              "icon": "edit",
+              "loading": false,
+              "onClick": [Function],
+              "type": "primary",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

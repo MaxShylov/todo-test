@@ -2,11 +2,7 @@ import { types as t } from '../../actions/tasks/tasks';
 
 
 export const initState = {
-  tasks: [
-    { id: 1, content: 'Task 1' },
-    { id: 2, content: 'Task 2' },
-    { id: 3, content: 'Task 3' }
-  ],
+  tasks: [],
   loading: false,
   error: null
 };

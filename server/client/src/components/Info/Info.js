@@ -14,7 +14,7 @@ Info.propTypes = {
 };
 
 
-function Info(props) {
+export function Info(props) {
   const { onLine } = props;
 
   return (

@@ -72,7 +72,7 @@ module.exports = (app) => {
 
       if (!isEmpty(user)) {
         user.tasks = req.body.tasks;
-        user.updateAt = Date.now();
+        user.updateAt = new Date().toISOString();
 
         await UsersModel.findOneAndUpdate(user.id, user, { upsert: true }, async (err) => {
           if (err) return next(err);

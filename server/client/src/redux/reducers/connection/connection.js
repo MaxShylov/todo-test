@@ -1,4 +1,4 @@
-import { types as t } from '../../actions/connetcion/connetcion';
+import { types as t } from '../../actions/connection/connection';
 
 
 export const initState = {

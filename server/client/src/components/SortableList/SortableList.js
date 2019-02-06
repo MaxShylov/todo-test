@@ -5,19 +5,19 @@ import { SortableContainer } from 'react-sortable-hoc';
 import TodoListItem from '../TodoListItem/TodoListItem';
 
 
-const { array } = PropTypes;
+const { arrayOf, object } = PropTypes;
 
 SortableList.propTypes = {
-  tasks: array
+  tasks: arrayOf(object)
 };
 
 
-function SortableList(props) {
+export function SortableList(props) {
   const { tasks } = props;
 
   return (
     <div>
-      {tasks.map((i, k) => (
+      {tasks && tasks.map((i, k) => (
         <TodoListItem key={i.id} index={k} {...i} />
       ))}
     </div>

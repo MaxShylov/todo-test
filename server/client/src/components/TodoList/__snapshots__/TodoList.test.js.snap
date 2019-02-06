@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList initial renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TodoList
+    getTasks={[Function]}
+    setStatusConnection={[Function]}
+    tasks={
+      Array [
+        Object {
+          "id": 1,
+        },
+        Object {
+          "id": 2,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Todo list:
+        </h2>,
+        <sortableList(SortableList)
+          axis="y"
+          distance={0}
+          getHelperDimensions={[Function]}
+          hideSortableGhost={true}
+          lockOffset="50%"
+          lockToContainerEdges={false}
+          onSortEnd={[Function]}
+          pressDelay={150}
+          pressThreshold={5}
+          shouldCancelStart={[Function]}
+          tasks={
+            Array [
+              Object {
+                "id": 1,
+              },
+              Object {
+                "id": 2,
+              },
+            ]
+          }
+          transitionDuration={300}
+          useWindowAsScrollContainer={false}
+        />,
+      ],
+      "className": "TodoList",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Todo list:",
+        },
+        "ref": null,
+        "rendered": "Todo list:",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "axis": "y",
+          "distance": 0,
+          "getHelperDimensions": [Function],
+          "hideSortableGhost": true,
+          "lockOffset": "50%",
+          "lockToContainerEdges": false,
+          "onSortEnd": [Function],
+          "pressDelay": 150,
+          "pressThreshold": 5,
+          "shouldCancelStart": [Function],
+          "tasks": Array [
+            Object {
+              "id": 1,
+            },
+            Object {
+              "id": 2,
+            },
+          ],
+          "transitionDuration": 300,
+          "useWindowAsScrollContainer": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Todo list:
+          </h2>,
+          <sortableList(SortableList)
+            axis="y"
+            distance={0}
+            getHelperDimensions={[Function]}
+            hideSortableGhost={true}
+            lockOffset="50%"
+            lockToContainerEdges={false}
+            onSortEnd={[Function]}
+            pressDelay={150}
+            pressThreshold={5}
+            shouldCancelStart={[Function]}
+            tasks={
+              Array [
+                Object {
+                  "id": 1,
+                },
+                Object {
+                  "id": 2,
+                },
+              ]
+            }
+            transitionDuration={300}
+            useWindowAsScrollContainer={false}
+          />,
+        ],
+        "className": "TodoList",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Todo list:",
+          },
+          "ref": null,
+          "rendered": "Todo list:",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "axis": "y",
+            "distance": 0,
+            "getHelperDimensions": [Function],
+            "hideSortableGhost": true,
+            "lockOffset": "50%",
+            "lockToContainerEdges": false,
+            "onSortEnd": [Function],
+            "pressDelay": 150,
+            "pressThreshold": 5,
+            "shouldCancelStart": [Function],
+            "tasks": Array [
+              Object {
+                "id": 1,
+              },
+              Object {
+                "id": 2,
+              },
+            ],
+            "transitionDuration": 300,
+            "useWindowAsScrollContainer": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

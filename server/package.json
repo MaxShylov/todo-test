@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "start-dev": "env $(cat .env) nodemon server/index.js"
+    "start": "$ env $(cat .env) node index.js",
+    "start-dev": "env $(cat .env) nodemon index.js"
   },
   "keywords": [],
   "author": "Max Shylov",

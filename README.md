@@ -4,6 +4,8 @@
 
 > cd client
 
+> create file .env from example .env.template
+
 > npm i
 
 > npm run build
@@ -13,6 +15,8 @@ open file `/build/index.html`
 ## Server
 
 > cd server
+
+> create file .env from example .env.template
 
 > npm i
 
@@ -25,13 +29,19 @@ open file `/build/index.html`
 
 > cd client
 
+> create file .env from example .env.template
+
 > npm i
 
 > npm run start
 
+open http://localhost:3000/
+
 ## Server
 
 > cd server
+
+> create file .env from example .env.template
 
 > npm i
 

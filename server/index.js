@@ -3,13 +3,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 
 const app = express();
 const routers = require('./routers');
-
-
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -24,11 +21,6 @@ app.use(bodyParser.json());
 
 routers(app);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/build/index.html'));
-});
-
-
 app.listen(PORT, function () {
-  console.log('Example app listening on port PORT!');
+  console.log(`Server listening on port ${PORT}!`);
 });

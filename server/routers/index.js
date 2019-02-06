@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const UsersModel = require('../db/models/users.model');
 
+
 const createToken = (body) => {
   return jwt.sign(
     body,
@@ -11,6 +12,7 @@ const createToken = (body) => {
     { expiresIn: process.env.EXPIRES_IN }
   );
 };
+
 
 module.exports = (app) => {
 

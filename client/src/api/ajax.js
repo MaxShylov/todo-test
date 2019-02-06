@@ -25,13 +25,9 @@ export const ajax = ({
     data = JSON.stringify(data);
   }
 
-  const HTTP_URI = process.env.NODE_ENV === 'development'
-    ? 'http://localhost:8000'
-    : 'https://todo-list.herokuapp.com';
-
   axios({
     url,
-    baseURL: HTTP_URI,
+    baseURL: process.env.REACT_APP_URL_API,
     method,
     headers,
     data,

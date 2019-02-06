@@ -10,7 +10,7 @@
 
 > npm run build
 
-open file `/build/index.html`
+start file `/build/index.html`
 
 ## Server
 

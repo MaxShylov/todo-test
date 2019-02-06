@@ -13,8 +13,6 @@ import { setStatusConnection } from '../../redux/actions/connection/connection';
 
 const { arrayOf, object, func } = PropTypes;
 
-let intSave = null;
-
 
 export class TodoList extends Component {
   static propTypes = {
@@ -42,10 +40,7 @@ export class TodoList extends Component {
     getTasks();
     setStatusConnection(navigator.onLine);
 
-    if (!intSave) intSave = setInterval(saveTasks, 15000);
-
     window.addEventListener('beforeunload', () => {
-      clearInterval(intSave);
       saveTasks();
     });
 
@@ -59,18 +54,16 @@ export class TodoList extends Component {
     });
   };
 
-  componentWillUnmount() {
-    if (intSave) clearInterval(intSave);
-  }
 
   onSortEnd = ({ oldIndex, newIndex }) => {
     const
       { tasks } = this.state,
-      { sortTasks } = this.props,
+      { sortTasks, saveTasks } = this.props,
       sortedTasks = arrayMove(tasks, oldIndex, newIndex);
 
     this.setState({ tasks: sortedTasks });
-    sortTasks(sortedTasks)
+    sortTasks(sortedTasks);
+    saveTasks()
   };
 
   render() {

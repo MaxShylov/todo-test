@@ -898,6 +898,19 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <InputEdit
     content="qwe"
     id={1}
+    saveTasks={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
     updateTask={
       [MockFunction] {
         "calls": Array [
@@ -1134,6 +1147,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <InputEdit
     content="qwe"
     id={1}
+    saveTasks={[MockFunction]}
     updateTask={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {

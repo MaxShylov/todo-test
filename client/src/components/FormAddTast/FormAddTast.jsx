@@ -7,7 +7,7 @@ import Button from 'antd/lib/button/button';
 import Container from '../Container/Container';
 
 import './FormAddTast.scss'
-import { addTask } from '../../redux/actions/tasks/tasks';
+import { addTask, saveTasks } from '../../redux/actions/tasks/tasks';
 
 const { func } = PropTypes;
 const InputGroup = Input.Group;
@@ -15,7 +15,8 @@ const InputGroup = Input.Group;
 
 export class FormAddTast extends Component {
   static propTypes = {
-    addTask: func
+    addTask: func,
+    saveTasks: func
   };
 
   state = { value: null };
@@ -23,16 +24,23 @@ export class FormAddTast extends Component {
   onChange = (e) => this.setState({ value: e.target.value });
 
   addTask = () => {
-    const { value } = this.state;
+    const
+      { addTask, saveTasks } = this.props,
+      { value } = this.state;
 
     if (!value) return;
 
-    this.props.addTask({
-      id: Date.now(),
+    let id = Date.now();
+
+    if (process.env.NODE_ENV === 'test') id = 1;
+
+    addTask({
+      id,
       isDone: false,
       content: this.state.value
     });
 
+    saveTasks();
     this.setState({ value: null })
   };
 
@@ -58,7 +66,8 @@ export class FormAddTast extends Component {
 
 
 const matchDispatchToProps = dispatch => bindActionCreators({
-  addTask
+  addTask,
+  saveTasks
 }, dispatch);
 
 export default connect(null, matchDispatchToProps)(FormAddTast);

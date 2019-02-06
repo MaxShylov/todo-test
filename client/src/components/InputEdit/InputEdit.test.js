@@ -36,9 +36,11 @@ describe('InputEdit', () => {
   describe('method updateTask without state.value', () => {
     const
       mockUpdateTask = jest.fn(),
+      mockSaveTasks = jest.fn(),
       nextProps = {
         ...props,
-        updateTask: mockUpdateTask
+        updateTask: mockUpdateTask,
+        saveTasks: mockSaveTasks
       },
       wrapper = shallow(<InputEdit {...nextProps} />);
 
@@ -52,14 +54,17 @@ describe('InputEdit', () => {
     it('renders properly', () => expect(wrapper).toMatchSnapshot());
     it('state.value updated to props.content', () => expect(wrapper.state().value).toEqual(nextProps.content));
     it('updateTask didn\'t call', () => expect(mockUpdateTask).not.toHaveBeenCalled());
+    it('saveTasks didn\'t call', () => expect(mockSaveTasks).not.toHaveBeenCalled());
   });
 
   describe('method updateTask with state.value', () => {
     const
       mockUpdateTask = jest.fn(),
+      mockSaveTasks = jest.fn(),
       nextProps = {
         ...props,
-        updateTask: mockUpdateTask
+        updateTask: mockUpdateTask,
+        saveTasks: mockSaveTasks
       },
       wrapper = shallow(<InputEdit {...nextProps} />);
 
@@ -73,6 +78,7 @@ describe('InputEdit', () => {
     it('renders properly', () => expect(wrapper).toMatchSnapshot());
     it('state.isEdit updated', () => expect(wrapper.state().isEdit).toEqual(false));
     it('updateTask called', () => expect(mockUpdateTask).toHaveBeenCalled());
+    it('saveTasks called', () => expect(mockSaveTasks).toHaveBeenCalled());
   });
 
   describe('method openEdit', () => {

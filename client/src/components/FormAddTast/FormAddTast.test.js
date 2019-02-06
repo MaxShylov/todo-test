@@ -23,30 +23,40 @@ describe('FormAddTast', () => {
     it('state value changed', () => expect(wrapper.state().value).toEqual(value));
   });
 
-  describe('method onChange without state.value', () => {
+  describe('method addTask without state.value', () => {
     const
       mockAddTask = jest.fn(),
-      props = { addTask: mockAddTask },
+      mockSaveTasks = jest.fn(),
+      props = {
+        addTask: mockAddTask,
+        saveTasks: mockSaveTasks
+      },
       wrapper = shallow(<FormAddTast {...props} />);
 
     wrapper.find('Button').simulate('click');
 
     it('renders properly', () => expect(wrapper).toMatchSnapshot());
     it('addTask didn\'t call', () => expect(mockAddTask).not.toHaveBeenCalled());
+    it('saveTasks didn\'t call', () => expect(mockSaveTasks).not.toHaveBeenCalled());
   });
 
-  describe('method onChange with state.value', () => {
+  describe('method addTask with state.value', () => {
     const
       mockAddTask = jest.fn(),
-      props = { addTask: mockAddTask },
+      mockSaveTasks = jest.fn(),
+      props = {
+        addTask: mockAddTask,
+        saveTasks: mockSaveTasks
+      },
       wrapper = shallow(<FormAddTast {...props} />);
 
-    wrapper.setState({value: 123});
+    wrapper.setState({ value: 123 });
 
     wrapper.find('Button').simulate('click');
 
     it('renders properly', () => expect(wrapper).toMatchSnapshot());
     it('addTask called', () => expect(mockAddTask).toHaveBeenCalled());
+    it('saveTasks called', () => expect(mockSaveTasks).toHaveBeenCalled());
     it('state value changed', () => expect(wrapper.state().value).isNull);
   });
 

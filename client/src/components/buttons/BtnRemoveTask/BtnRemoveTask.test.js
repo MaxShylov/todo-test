@@ -19,9 +19,11 @@ describe('BtnRemoveTask', () => {
   describe('function rmTask', () => {
     const
       mockRemoveTask = jest.fn(),
+      mockSaveTasks = jest.fn(),
       nextProps = {
         ...props,
-        removeTask: mockRemoveTask
+        removeTask: mockRemoveTask,
+        saveTasks: mockSaveTasks
       },
       wrapper = shallow(<BtnRemoveTask {...nextProps} />);
 
@@ -29,6 +31,7 @@ describe('BtnRemoveTask', () => {
 
     it('renders properly', () => expect(wrapper).toMatchSnapshot());
     it('removeTask called', () => expect(mockRemoveTask).toHaveBeenCalled());
+    it('saveTasks called', () => expect(mockSaveTasks).toHaveBeenCalled());
   });
 
 });

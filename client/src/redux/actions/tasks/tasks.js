@@ -28,8 +28,11 @@ export const getTasks = () => (dispatch) => {
           getTasks = res.data,
           getUpdateAt = res.updateAt,
           localTasks = localStorage.tasks ? JSON.parse(localStorage.tasks) : [],
-          localeUpdateAt = localStorage.updateAt,
-          tasks = getUpdateAt > localeUpdateAt ? getTasks : localTasks;
+          localeUpdateAt = localStorage.updateAt;
+
+        let tasks = getTasks;
+
+        if ((localTasks || localeUpdateAt) && getUpdateAt < localeUpdateAt) tasks = localTasks;
 
         dispatch({ type: types.GET_TASKS_SUCCESS, payload: tasks })
       },

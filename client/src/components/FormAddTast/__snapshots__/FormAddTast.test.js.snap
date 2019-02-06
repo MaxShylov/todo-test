@@ -215,222 +215,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`FormAddTast method onChange renders properly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormAddTast />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": <Group
-        compact={true}
-      >
-        <Input
-          disabled={false}
-          onChange={[Function]}
-          onPressEnter={[Function]}
-          type="text"
-          value={123}
-        />
-        <Button
-          block={false}
-          ghost={false}
-          loading={false}
-          onClick={[Function]}
-        >
-          Add task
-        </Button>
-      </Group>,
-      "className": "FormAddTast",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <Input
-            disabled={false}
-            onChange={[Function]}
-            onPressEnter={[Function]}
-            type="text"
-            value={123}
-          />,
-          <Button
-            block={false}
-            ghost={false}
-            loading={false}
-            onClick={[Function]}
-          >
-            Add task
-          </Button>,
-        ],
-        "compact": true,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "disabled": false,
-            "onChange": [Function],
-            "onPressEnter": [Function],
-            "type": "text",
-            "value": 123,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "block": false,
-            "children": "Add task",
-            "ghost": false,
-            "loading": false,
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": "Add task",
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <Group
-          compact={true}
-        >
-          <Input
-            disabled={false}
-            onChange={[Function]}
-            onPressEnter={[Function]}
-            type="text"
-            value={123}
-          />
-          <Button
-            block={false}
-            ghost={false}
-            loading={false}
-            onClick={[Function]}
-          >
-            Add task
-          </Button>
-        </Group>,
-        "className": "FormAddTast",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <Input
-              disabled={false}
-              onChange={[Function]}
-              onPressEnter={[Function]}
-              type="text"
-              value={123}
-            />,
-            <Button
-              block={false}
-              ghost={false}
-              loading={false}
-              onClick={[Function]}
-            >
-              Add task
-            </Button>,
-          ],
-          "compact": true,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "disabled": false,
-              "onChange": [Function],
-              "onPressEnter": [Function],
-              "type": "text",
-              "value": 123,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "block": false,
-              "children": "Add task",
-              "ghost": false,
-              "loading": false,
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Add task",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
-exports[`FormAddTast method onChange with state.value renders properly 1`] = `
+exports[`FormAddTast method addTask with state.value renders properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FormAddTast
@@ -440,10 +225,23 @@ ShallowWrapper {
           Array [
             Object {
               "content": 123,
-              "id": 1549481244879,
+              "id": 1,
               "isDone": false,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    saveTasks={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
         ],
         "results": Array [
           Object {
@@ -665,11 +463,12 @@ ShallowWrapper {
 }
 `;
 
-exports[`FormAddTast method onChange without state.value renders properly 1`] = `
+exports[`FormAddTast method addTask without state.value renders properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FormAddTast
     addTask={[MockFunction]}
+    saveTasks={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -832,6 +631,221 @@ ShallowWrapper {
               "onPressEnter": [Function],
               "type": "text",
               "value": null,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": false,
+              "children": "Add task",
+              "ghost": false,
+              "loading": false,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Add task",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`FormAddTast method onChange renders properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormAddTast />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <Group
+        compact={true}
+      >
+        <Input
+          disabled={false}
+          onChange={[Function]}
+          onPressEnter={[Function]}
+          type="text"
+          value={123}
+        />
+        <Button
+          block={false}
+          ghost={false}
+          loading={false}
+          onClick={[Function]}
+        >
+          Add task
+        </Button>
+      </Group>,
+      "className": "FormAddTast",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Input
+            disabled={false}
+            onChange={[Function]}
+            onPressEnter={[Function]}
+            type="text"
+            value={123}
+          />,
+          <Button
+            block={false}
+            ghost={false}
+            loading={false}
+            onClick={[Function]}
+          >
+            Add task
+          </Button>,
+        ],
+        "compact": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "disabled": false,
+            "onChange": [Function],
+            "onPressEnter": [Function],
+            "type": "text",
+            "value": 123,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "block": false,
+            "children": "Add task",
+            "ghost": false,
+            "loading": false,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Add task",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Group
+          compact={true}
+        >
+          <Input
+            disabled={false}
+            onChange={[Function]}
+            onPressEnter={[Function]}
+            type="text"
+            value={123}
+          />
+          <Button
+            block={false}
+            ghost={false}
+            loading={false}
+            onClick={[Function]}
+          >
+            Add task
+          </Button>
+        </Group>,
+        "className": "FormAddTast",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Input
+              disabled={false}
+              onChange={[Function]}
+              onPressEnter={[Function]}
+              type="text"
+              value={123}
+            />,
+            <Button
+              block={false}
+              ghost={false}
+              loading={false}
+              onClick={[Function]}
+            >
+              Add task
+            </Button>,
+          ],
+          "compact": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "disabled": false,
+              "onChange": [Function],
+              "onPressEnter": [Function],
+              "type": "text",
+              "value": 123,
             },
             "ref": null,
             "rendered": null,
